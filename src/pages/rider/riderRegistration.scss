@@ -1,0 +1,144 @@
+.rider-registration{
+  label{
+    color: #012A4A;
+    font-weight: 500; 
+  }
+    display: flex;
+    .rider-banner{
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+      // object-fit: cover;
+    }
+
+     .rider-banner img, .rider-banner p{
+      width: 50%;
+      height: 100%;
+      position: fixed;
+      object-fit: cover;
+     }
+
+     .rider-banner p{ 
+      color: #fff;
+      top:75vh;
+      z-index: 2;
+      font-size: 2rem;
+      font-weight: 700;
+      width: 30%;
+      left: 5%;
+     }
+
+     .rider-banner .rider-banner-overlay{
+      position: fixed;
+      width: 50%;
+      height: 100%;
+      background:linear-gradient(360deg, rgba(0, 0, 0, 0.6) 33.19%, rgba(0, 0, 0, 0) 55.38%);
+      z-index: 1;
+     }
+
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      .rider-banner{
+        display: none;
+      }
+      
+    }
+    .rider-registration-page{
+      display: flex;
+      flex-direction: column;
+      padding:5% 8%;
+      width: 100%;
+
+      .rider-registration-logo{
+        margin-bottom: 2rem;
+      }
+
+      .rider-registration-form{
+        display: flex;
+        flex-direction: column;
+      }
+      .form_wrapper{
+        display: flex;
+        align-items: center;
+        padding: 9px 16px 8px 16px;
+        gap:10px;
+        border: 1px solid #012A4A;
+        border-radius: 6px;
+        height: 58px;
+        width: 100%;
+        margin: 3% 0;
+        input, select{
+          border: none;
+          outline: none;
+          width: 100%;
+        } 
+
+        .fileBtn{
+          display: flex;
+          background-color: #F2F2F3;
+          border:none;
+          height: 32px;
+          justify-content: center;
+          align-items: center;
+          padding: 0 3%;
+          cursor: pointer;
+          gap:5%;
+          width: 7rem;
+          border-radius: 4px;
+        }
+        
+        .custom-file-input {
+          color: transparent;
+        }
+        .custom-file-input::-webkit-file-upload-button {
+          visibility: hidden;
+        }
+        .custom-file-input::before {
+          content: 'Upload';
+          color: black;
+          display: inline-block;
+          border-radius: 3px;
+          padding: 5px 8px;
+          outline: none;
+          white-space: nowrap;
+          -webkit-user-select: none;
+          cursor: pointer;
+          font-weight: 400;
+          font-size: 16px;
+        }
+        .custom-file-input:hover::before {
+          border-color: black;
+        }
+        .custom-file-input:active {
+          outline: 0;
+        }
+        .custom-file-input:active::before {
+          background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+        }
+        
+     
+      }
+
+      .signUpBtn{
+        width:100%;
+        height: 48px;
+        color:#fff;
+        background-color: #E02B45;
+        border:none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 3%;
+      }
+
+      .rider-registration-form-login-link{
+        margin:5% 0;
+      }
+      .rider-registration-form-login-link a{
+        color: #E02B45;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+}

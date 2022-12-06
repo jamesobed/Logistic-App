@@ -1,0 +1,7 @@
+# #!/usr/bin/env sh
+# . "$(dirname -- "$0")/_/husky.sh"
+login
+ yarn test --watchAll=false
+
+yarn lint && yarn test --watchAll=false
+ develop

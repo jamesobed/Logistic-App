@@ -1,0 +1,8 @@
+build
+Dockerfile
+docker-compose.yml
+.env
+.env.sample
+.gitignore
+README.md
+*.spec.js
